@@ -102,4 +102,28 @@ input.onGesture(Gesture.Shake, () => {
 **Challenge 4**
 
 Add 3 more responses so your magic 8 ball has 8 possible responses. Be creative!
-
+input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
+    randomnumber = randint(0, 7)
+    if (randomnumber == 0) {
+        basic.showString("YES")
+    } else if (randomnumber == 1) {
+        basic.showString("NO")
+    } else if (randomnumber == 2) {
+        basic.showString("POSSIBILY")
+    } else if (randomnumber == 3) {
+        basic.showString("I DON'T KNOW")
+    } else if (randomnumber == 4) {
+        basic.showString("POSITIVELY")
+    } else if (randomnumber == 5) {
+        basic.showString("DEFINITELY NOT")
+    } else if (randomnumber == 6) {
+        basic.showString("NOT POSSIBLE")
+    } else {
+        basic.showString("Maybe")
+    }
+    basic.showNumber(8)
+})
+let randomnumber = 0
+basic.showString("ASK A QUESTION")
+basic.showNumber(8)
